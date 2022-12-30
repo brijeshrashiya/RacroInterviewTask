@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B61D670295EADE200854FBF /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B61D66F295EADE200854FBF /* Array+Extension.swift */; };
+		5B61D672295EB2A700854FBF /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B61D671295EB2A700854FBF /* ProductDetail.swift */; };
+		5B61D674295EE08700854FBF /* FavouriteProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B61D673295EE08700854FBF /* FavouriteProductList.swift */; };
+		5B950C9E295DEA01001EEF77 /* Recro_Interview_TaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B950C9D295DEA01001EEF77 /* Recro_Interview_TaskApp.swift */; };
+		5B950CA2295DEA09001EEF77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B950CA1295DEA09001EEF77 /* Assets.xcassets */; };
+		5B950CA5295DEA09001EEF77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B950CA4295DEA09001EEF77 /* Preview Assets.xcassets */; };
+		5B950CAF295DEA09001EEF77 /* Recro_Interview_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B950CAE295DEA09001EEF77 /* Recro_Interview_TaskTests.swift */; };
+		5B950CCA295DEA97001EEF77 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B950CC9295DEA97001EEF77 /* LoadingView.swift */; };
+		5B950CD0295DEABB001EEF77 /* StringConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B950CCC295DEABB001EEF77 /* StringConstant.swift */; };
+		5B950CD1295DEABB001EEF77 /* ImageConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B950CCD295DEABB001EEF77 /* ImageConstant.swift */; };
+		5B950CD2295DEABB001EEF77 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B950CCE295DEABB001EEF77 /* AppConstant.swift */; };
+		5B950CD3295DEABB001EEF77 /* ColorConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B950CCF295DEABB001EEF77 /* ColorConstant.swift */; };
+		5B950CD7295DEDA9001EEF77 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B950CD6295DEDA9001EEF77 /* APIManager.swift */; };
+		5B950CDB295DEE0D001EEF77 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B950CDA295DEE0D001EEF77 /* ProductList.swift */; };
+		5B950CDE295DEE61001EEF77 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B950CDD295DEE61001EEF77 /* ProductViewModel.swift */; };
+		5B950CE0295DEEAE001EEF77 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B950CDF295DEEAE001EEF77 /* ProductModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B950CAB295DEA09001EEF77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B950C92295DEA00001EEF77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B950C99295DEA01001EEF77;
+			remoteInfo = "Recro Interview Task";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B61D66F295EADE200854FBF /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		5B61D671295EB2A700854FBF /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
+		5B61D673295EE08700854FBF /* FavouriteProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteProductList.swift; sourceTree = "<group>"; };
+		5B950C9A295DEA01001EEF77 /* Recro Interview Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recro Interview Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B950C9D295DEA01001EEF77 /* Recro_Interview_TaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recro_Interview_TaskApp.swift; sourceTree = "<group>"; };
+		5B950CA1295DEA09001EEF77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B950CA4295DEA09001EEF77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5B950CAA295DEA09001EEF77 /* Recro Interview TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Recro Interview TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B950CAE295DEA09001EEF77 /* Recro_Interview_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recro_Interview_TaskTests.swift; sourceTree = "<group>"; };
+		5B950CC9295DEA97001EEF77 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		5B950CCC295DEABB001EEF77 /* StringConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConstant.swift; sourceTree = "<group>"; };
+		5B950CCD295DEABB001EEF77 /* ImageConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageConstant.swift; sourceTree = "<group>"; };
+		5B950CCE295DEABB001EEF77 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		5B950CCF295DEABB001EEF77 /* ColorConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConstant.swift; sourceTree = "<group>"; };
+		5B950CD4295DED69001EEF77 /* Recro-Interview-Task-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Recro-Interview-Task-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5B950CD6295DEDA9001EEF77 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		5B950CDA295DEE0D001EEF77 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
+		5B950CDD295DEE61001EEF77 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		5B950CDF295DEEAE001EEF77 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B950C97295DEA01001EEF77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B950CA7295DEA09001EEF77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B61D66E295EADD400854FBF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5B61D66F295EADE200854FBF /* Array+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5B950C91295DEA00001EEF77 = {
+			isa = PBXGroup;
+			children = (
+				5B950C9C295DEA01001EEF77 /* Recro Interview Task */,
+				5B950CAD295DEA09001EEF77 /* Recro Interview TaskTests */,
+				5B950C9B295DEA01001EEF77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B950C9B295DEA01001EEF77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B950C9A295DEA01001EEF77 /* Recro Interview Task.app */,
+				5B950CAA295DEA09001EEF77 /* Recro Interview TaskTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B950C9C295DEA01001EEF77 /* Recro Interview Task */ = {
+			isa = PBXGroup;
+			children = (
+				5B950CCB295DEAA8001EEF77 /* Constants */,
+				5B950CDC295DEE4D001EEF77 /* ViewModel */,
+				5B950CD8295DEDEA001EEF77 /* Models */,
+				5B950CD9295DEDF4001EEF77 /* Controller */,
+				5B950CC7295DEA73001EEF77 /* Views */,
+				5B950CD5295DED95001EEF77 /* Network */,
+				5B61D66E295EADD400854FBF /* Extension */,
+				5B950C9D295DEA01001EEF77 /* Recro_Interview_TaskApp.swift */,
+				5B950CD4295DED69001EEF77 /* Recro-Interview-Task-Info.plist */,
+				5B950CA1295DEA09001EEF77 /* Assets.xcassets */,
+				5B950CA3295DEA09001EEF77 /* Preview Content */,
+			);
+			path = "Recro Interview Task";
+			sourceTree = "<group>";
+		};
+		5B950CA3295DEA09001EEF77 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5B950CA4295DEA09001EEF77 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5B950CAD295DEA09001EEF77 /* Recro Interview TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B950CAE295DEA09001EEF77 /* Recro_Interview_TaskTests.swift */,
+			);
+			path = "Recro Interview TaskTests";
+			sourceTree = "<group>";
+		};
+		5B950CC7295DEA73001EEF77 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B950CC8295DEA87001EEF77 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B950CC8295DEA87001EEF77 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5B950CC9295DEA97001EEF77 /* LoadingView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5B950CCB295DEAA8001EEF77 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5B950CCE295DEABB001EEF77 /* AppConstant.swift */,
+				5B950CCF295DEABB001EEF77 /* ColorConstant.swift */,
+				5B950CCD295DEABB001EEF77 /* ImageConstant.swift */,
+				5B950CCC295DEABB001EEF77 /* StringConstant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		5B950CD5295DED95001EEF77 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5B950CD6295DEDA9001EEF77 /* APIManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5B950CD8295DEDEA001EEF77 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B950CDF295DEEAE001EEF77 /* ProductModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B950CD9295DEDF4001EEF77 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5B950CDA295DEE0D001EEF77 /* ProductList.swift */,
+				5B61D671295EB2A700854FBF /* ProductDetail.swift */,
+				5B61D673295EE08700854FBF /* FavouriteProductList.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5B950CDC295DEE4D001EEF77 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5B950CDD295DEE61001EEF77 /* ProductViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B950C99295DEA01001EEF77 /* Recro Interview Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B950CBE295DEA09001EEF77 /* Build configuration list for PBXNativeTarget "Recro Interview Task" */;
+			buildPhases = (
+				5B950C96295DEA01001EEF77 /* Sources */,
+				5B950C97295DEA01001EEF77 /* Frameworks */,
+				5B950C98295DEA01001EEF77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Recro Interview Task";
+			productName = "Recro Interview Task";
+			productReference = 5B950C9A295DEA01001EEF77 /* Recro Interview Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B950CA9295DEA09001EEF77 /* Recro Interview TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B950CC1295DEA09001EEF77 /* Build configuration list for PBXNativeTarget "Recro Interview TaskTests" */;
+			buildPhases = (
+				5B950CA6295DEA09001EEF77 /* Sources */,
+				5B950CA7295DEA09001EEF77 /* Frameworks */,
+				5B950CA8295DEA09001EEF77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B950CAC295DEA09001EEF77 /* PBXTargetDependency */,
+			);
+			name = "Recro Interview TaskTests";
+			productName = "Recro Interview TaskTests";
+			productReference = 5B950CAA295DEA09001EEF77 /* Recro Interview TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B950C92295DEA00001EEF77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					5B950C99295DEA01001EEF77 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					5B950CA9295DEA09001EEF77 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 5B950C99295DEA01001EEF77;
+					};
+				};
+			};
+			buildConfigurationList = 5B950C95295DEA00001EEF77 /* Build configuration list for PBXProject "Recro Interview Task" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B950C91295DEA00001EEF77;
+			productRefGroup = 5B950C9B295DEA01001EEF77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B950C99295DEA01001EEF77 /* Recro Interview Task */,
+				5B950CA9295DEA09001EEF77 /* Recro Interview TaskTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B950C98295DEA01001EEF77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B950CA5295DEA09001EEF77 /* Preview Assets.xcassets in Resources */,
+				5B950CA2295DEA09001EEF77 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B950CA8295DEA09001EEF77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B950C96295DEA01001EEF77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B950CD7295DEDA9001EEF77 /* APIManager.swift in Sources */,
+				5B950CD0295DEABB001EEF77 /* StringConstant.swift in Sources */,
+				5B950CDB295DEE0D001EEF77 /* ProductList.swift in Sources */,
+				5B61D670295EADE200854FBF /* Array+Extension.swift in Sources */,
+				5B950C9E295DEA01001EEF77 /* Recro_Interview_TaskApp.swift in Sources */,
+				5B950CD3295DEABB001EEF77 /* ColorConstant.swift in Sources */,
+				5B61D672295EB2A700854FBF /* ProductDetail.swift in Sources */,
+				5B950CDE295DEE61001EEF77 /* ProductViewModel.swift in Sources */,
+				5B950CD2295DEABB001EEF77 /* AppConstant.swift in Sources */,
+				5B950CD1295DEABB001EEF77 /* ImageConstant.swift in Sources */,
+				5B61D674295EE08700854FBF /* FavouriteProductList.swift in Sources */,
+				5B950CCA295DEA97001EEF77 /* LoadingView.swift in Sources */,
+				5B950CE0295DEEAE001EEF77 /* ProductModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B950CA6295DEA09001EEF77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B950CAF295DEA09001EEF77 /* Recro_Interview_TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B950CAC295DEA09001EEF77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B950C99295DEA01001EEF77 /* Recro Interview Task */;
+			targetProxy = 5B950CAB295DEA09001EEF77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5B950CBC295DEA09001EEF77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B950CBD295DEA09001EEF77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B950CBF295DEA09001EEF77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Recro Interview Task/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Recro-Interview-Task-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learning.-brijesh.Recro-Interview-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B950CC0295DEA09001EEF77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Recro Interview Task/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Recro-Interview-Task-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learning.-brijesh.Recro-Interview-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5B950CC2295DEA09001EEF77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learning.-brijesh.Recro-Interview-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recro Interview Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Recro Interview Task";
+			};
+			name = Debug;
+		};
+		5B950CC3295DEA09001EEF77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.learning.-brijesh.Recro-Interview-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recro Interview Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Recro Interview Task";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B950C95295DEA00001EEF77 /* Build configuration list for PBXProject "Recro Interview Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B950CBC295DEA09001EEF77 /* Debug */,
+				5B950CBD295DEA09001EEF77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B950CBE295DEA09001EEF77 /* Build configuration list for PBXNativeTarget "Recro Interview Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B950CBF295DEA09001EEF77 /* Debug */,
+				5B950CC0295DEA09001EEF77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B950CC1295DEA09001EEF77 /* Build configuration list for PBXNativeTarget "Recro Interview TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B950CC2295DEA09001EEF77 /* Debug */,
+				5B950CC3295DEA09001EEF77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B950C92295DEA00001EEF77 /* Project object */;
+}
