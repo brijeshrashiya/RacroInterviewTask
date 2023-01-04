@@ -13,6 +13,7 @@ class ProductViewModel: ObservableObject {
     
     // MARK: - Variable Declaration
     private var cancellables = Set<AnyCancellable>()
+    var service: HTTPProtocol
     
     @Published private(set) var state: MainViewState = .none {
         didSet {
@@ -21,7 +22,7 @@ class ProductViewModel: ObservableObject {
     }
     @Published private(set) var favouriteState: FavouriteViewState = .none {
         didSet {
-            print("new state \(state)")
+            print("new favouriteState \(state)")
         }
     }
     
@@ -34,7 +35,8 @@ class ProductViewModel: ObservableObject {
     @Published var index : Int = 0
     
     // MARK: - Init
-    init() {
+    init(service: HTTPProtocol) {
+        self.service = service
         publishState(.none)
         publishFilterState(.none)
         callAPIForGetProductList()
@@ -98,7 +100,7 @@ extension ProductViewModel {
         Task {
             do {
                 
-                let obj = try await APIManager().getProductList()
+                let obj = try await service.getProductList()
                 DispatchQueue.main.async {
                     if let arr = obj.products, arr.count > 0 {
                         // update with favourite

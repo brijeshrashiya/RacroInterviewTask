@@ -7,7 +7,12 @@
 
 import Foundation
 
-class APIManager {
+protocol HTTPProtocol {
+    func getProductList() async throws -> ProductResponseModel
+}
+
+
+final class APIManager: HTTPProtocol {
     
     func getProductList() async throws -> ProductResponseModel {
         guard let url = URL(string: "\(ApiConstant.URLs.getProductList)") else { fatalError(StringConstant.APIError.missingURL) }

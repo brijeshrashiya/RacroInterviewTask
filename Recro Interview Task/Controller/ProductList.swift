@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProductList: View {
     //MARK: - Variable Declaration
-    @StateObject private var viewModel: ProductViewModel = ProductViewModel()
+    @StateObject private var viewModel: ProductViewModel = ProductViewModel(service: APIManager())
     
     //MARK: - Body
     var body: some View {

@@ -25,16 +25,16 @@ struct ProductModel: Decodable, Equatable {
     var imageURL: String?
     var isFavourite:Bool? = false
     var brand: String?
-    var ratingCount: Double
-    var isAddToCartEnable: Bool
+    var ratingCount: Double?
+    var isAddToCartEnable: Bool?
     var addToCartButtonText: String?
-    var isInTrolley: Bool
-    var isInWishlist: Bool
-    var isFindMeEnable: Bool
-    var saleUnitPrice: Double
-    var totalReviewCount: Int
-    var isDeliveryOnly: Bool
-    var isDirectFromSupplier: Bool
+    var isInTrolley: Bool?
+    var isInWishlist: Bool?
+    var isFindMeEnable: Bool?
+    var saleUnitPrice: Double?
+    var totalReviewCount: Int?
+    var isDeliveryOnly: Bool?
+    var isDirectFromSupplier: Bool?
     
     var price: [PriceModel]?
     var badges: [String]?
@@ -48,29 +48,32 @@ struct ProductModel: Decodable, Equatable {
         return nil
     }
     
-    func getRating( numberOfDigits : Int = 2) -> String {
-        
-        let disValue = String(format: "%0.\(numberOfDigits)f",ratingCount)
-        if disValue != "0.0" && disValue != "0.00"{
-            
-            return "\(disValue)"
+    func getRating( numberOfDigits : Int = 1) -> String {
+        if let ratingCount {
+            let disValue = String(format: "%0.\(numberOfDigits)f",ratingCount)
+            if disValue != "0.0" && disValue != "0.00"{
+                
+                return "\(disValue)"
+            }
         }
-        
         return "0.0"
     }
     
     struct PriceModel: Decodable {
         var message: String?
-        var value: Double
+        var value: Double?
         var isOfferPrice: Bool
         
         func getFormattedPrice( numberOfDigits : Int = 2) -> String {
             
-            let disValue = String(format: "%0.\(numberOfDigits)f",value)
-            if disValue != "0.0" && disValue != "0.00"{
-                
-                return "\(disValue)"
+            if let value {
+                let disValue = String(format: "%0.\(numberOfDigits)f",value)
+                if disValue != "0.0" && disValue != "0.00"{
+                    
+                    return "\(disValue)"
+                }
             }
+            
             
             return "0.0"
         }
@@ -79,9 +82,9 @@ struct ProductModel: Decodable, Equatable {
     struct PurchaseTypesModel: Decodable {
         var purchaseType: String?
         var displayName: String?
-        var unitPrice: Double
-        var minQtyLimit: Int
-        var maxQtyLimit: Int
-        var cartQty: Int
+        var unitPrice: Double?
+        var minQtyLimit: Int?
+        var maxQtyLimit: Int?
+        var cartQty: Int?
     }
 }
