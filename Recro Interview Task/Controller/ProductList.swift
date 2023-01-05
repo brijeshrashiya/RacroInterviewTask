@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ProductList: View {
     //MARK: - Variable Declaration
@@ -84,12 +85,12 @@ struct ProductList: View {
                 ZStack {
                     
                         HStack() {
-                                AsyncImage(url: URL(string: productData.imageURL ?? "")) { image in
-                                    image.resizable()
-                                } placeholder: {
-                                    ProgressView()
-                                }
-                                .frame(width: 80, height: 80)
+                            RemoteImage(
+                                url: URL(string: productData.imageURL ?? "")!,
+                                placeholder: { LoadingView() },
+                                image: { Image(uiImage: $0).resizable() }
+                             )
+                            .frame(width: 80, height: 80)
                             VStack(alignment: .leading) {
                                 Text(productData.title ?? "-")
                                     .fontWeight(.medium)
@@ -146,4 +147,3 @@ struct ProductList_Previews: PreviewProvider {
         ProductList()
     }
 }
-

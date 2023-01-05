@@ -83,12 +83,12 @@ struct FavouriteProductList: View {
                 ZStack {
                     
                         HStack() {
-                                AsyncImage(url: URL(string: productData.imageURL ?? "")) { image in
-                                    image.resizable()
-                                } placeholder: {
-                                    ProgressView()
-                                }
-                                .frame(width: 80, height: 80)
+                            RemoteImage(
+                                url: URL(string: productData.imageURL ?? "")!,
+                                placeholder: { ProgressView() },
+                                image: { Image(uiImage: $0).resizable() }
+                             )
+                            .frame(width: 80, height: 80)
                             VStack(alignment: .leading) {
                                 Text(productData.title ?? "-")
                                     .fontWeight(.medium)

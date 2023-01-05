@@ -50,17 +50,16 @@ struct ProductDetail: View {
             let productData = viewModel.productData[index]
             
             VStack() {
-                    AsyncImage(url: URL(string: productData.imageURL ?? "")) { image in
-                        image.resizable()
-                    } placeholder: {
-                        ProgressView()
-                    }
-                    .frame(
-//                          maxWidth: .infinity,
-                          minHeight: 200,
-                          maxHeight: 200
-                        )
-                    .padding(.bottom, 4)
+                RemoteImage(
+                    url: URL(string: productData.imageURL ?? "")!,
+                    placeholder: { ProgressView() },
+                    image: { Image(uiImage: $0).resizable() }
+                 )
+                .frame(
+                     minHeight: 200,
+                     maxHeight: 200
+                )
+                .padding(.bottom, 4)
                
                 Text(productData.title ?? "-")
                     .fontWeight(.medium)

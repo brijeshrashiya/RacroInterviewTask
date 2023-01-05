@@ -13,6 +13,10 @@ enum ImageConstants {
     static let cart : String = "cart"
     static let back : String = "arrowshape.turn.up.backward.2"
     
+    static let noDataPlaceHoleder : String = "noDataPlaceHolder"
+    
+    
+    
     
     
     
