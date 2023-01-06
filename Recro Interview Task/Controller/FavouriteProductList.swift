@@ -9,8 +9,8 @@ import SwiftUI
 
 struct FavouriteProductList: View {
     //MARK: - Variable Declaration
-    @StateObject var viewModel: ProductViewModel = ProductViewModel(service: APIManager())
-    @Environment(\.presentationMode) var presentationMode
+    @StateObject var viewModel: ProductViewModel
+    @Environment(\.presentationMode) private var presentationMode
     
     //MARK: - Body
     var body: some View {
@@ -36,8 +36,6 @@ struct FavouriteProductList: View {
         }
         .navigationBarBackButtonHidden(true)
         .navigationViewStyle(StackNavigationViewStyle())
-        
-        
     }
     
     //MARK: - Dismiss Button View
@@ -78,13 +76,13 @@ struct FavouriteProductList: View {
     private var productListView: some View {
         return ScrollView(showsIndicators: false) {
             
-            ForEach((0...((viewModel.favouriteData.count) - 1)), id: \.self) { index in
+            ForEach((0...((viewModel.favouriteProductData.count) - 1)), id: \.self) { index in
                 let productData = viewModel.favouriteProductData[index]
                 ZStack {
                     
                         HStack() {
                             RemoteImage(
-                                url: URL(string: productData.imageURL ?? "")!,
+                                url: productData.imageURL ?? "",
                                 placeholder: { ProgressView() },
                                 image: { Image(uiImage: $0).resizable() }
                              )
@@ -144,6 +142,6 @@ struct FavouriteProductList: View {
 
 struct FavouriteProductList_Previews: PreviewProvider {
     static var previews: some View {
-        FavouriteProductList()
+        FavouriteProductList(viewModel: ProductViewModel())
     }
 }

@@ -10,7 +10,7 @@ import Combine
 
 struct ProductList: View {
     //MARK: - Variable Declaration
-    @StateObject private var viewModel: ProductViewModel = ProductViewModel(service: APIManager())
+    @StateObject private var viewModel: ProductViewModel = ProductViewModel()
     
     //MARK: - Body
     var body: some View {
@@ -86,7 +86,7 @@ struct ProductList: View {
                     
                         HStack() {
                             RemoteImage(
-                                url: URL(string: productData.imageURL ?? "")!,
+                                url: productData.imageURL ?? "",
                                 placeholder: { LoadingView() },
                                 image: { Image(uiImage: $0).resizable() }
                              )

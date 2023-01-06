@@ -10,7 +10,6 @@ import SwiftUI
 struct ProductDetail: View {
     
     //MARK: - Variable Declaration
-    @Environment(\.presentationMode) var presentationMode
     @StateObject var viewModel: ProductViewModel
     var index: Int
     var isFromFavourite:Bool = false
@@ -51,7 +50,7 @@ struct ProductDetail: View {
             
             VStack() {
                 RemoteImage(
-                    url: URL(string: productData.imageURL ?? "")!,
+                    url: productData.imageURL ?? "",
                     placeholder: { ProgressView() },
                     image: { Image(uiImage: $0).resizable() }
                  )

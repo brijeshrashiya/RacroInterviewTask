@@ -13,7 +13,7 @@ class ProductViewModel: ObservableObject {
     
     // MARK: - Variable Declaration
     private var cancellables = Set<AnyCancellable>()
-    var service: HTTPProtocol
+    private var service: HTTPProtocol
     
     @Published private(set) var state: MainViewState = .none {
         didSet {
@@ -31,11 +31,11 @@ class ProductViewModel: ObservableObject {
     @Published var detailPresented : Bool = false
     @Published var detailPresentedFromFavourite : Bool = false
     @Published var FavouritePresented : Bool = false
-    @AppStorage("favourite") var favouriteData : [String] = []
+    @AppStorage("favourite") private var favouriteData : [String] = []
     @Published var index : Int = 0
     
     // MARK: - Init
-    init(service: HTTPProtocol) {
+    init(service: HTTPProtocol = APIManager()) {
         self.service = service
         publishState(.none)
         publishFilterState(.none)
@@ -82,10 +82,8 @@ class ProductViewModel: ObservableObject {
             publishFilterState(.emptyData)
         }
     }
-    
-   
-    
 }
+
 // MARK: - API Calling
 extension ProductViewModel {
     

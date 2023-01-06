@@ -73,8 +73,6 @@ struct ProductModel: Decodable, Equatable {
                     return "\(disValue)"
                 }
             }
-            
-            
             return "0.0"
         }
     }
